@@ -1,7 +1,10 @@
 class AnimalsController < ApplicationController
-  before_action :set_animal, only: :show
+  before_action :set_animal, only: %i[show webcam]
 
   def show
+  end
+
+  def webcam
   end
 
   private

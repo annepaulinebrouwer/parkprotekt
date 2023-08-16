@@ -3,7 +3,10 @@ Animal.destroy_all
 Marker.destroy_all
 
 puts 'Create Black Bear'
-black_bear = Animal.create(name: 'Black Bear')
+black_bear = Animal.create(
+  name: 'Black Bear',
+  video_url: 'https://www.youtube.com/embed/8gbnYDsqWL0?controls=0'
+)
 
 puts 'Create markers for Black Bear'
 black_bear.markers.create!(
@@ -23,7 +26,10 @@ black_bear.markers.create!(
 )
 
 puts 'Create Red Fox'
-red_fox = Animal.create(name: 'Red Fox')
+red_fox = Animal.create(
+  name: 'Red Fox',
+  video_url: 'https://www.youtube.com/embed/w1j7tQWCw48?controls=0'
+)
 
 puts 'Create markers for Red Fox'
 red_fox.markers.create!(
