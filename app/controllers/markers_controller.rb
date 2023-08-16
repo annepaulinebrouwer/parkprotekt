@@ -1,4 +1,5 @@
 class MarkersController < ApplicationController
+  before_action :authenticate_user!, only: %i[new create destroy]
   before_action :set_animal, only: %i[new create]
   before_action :set_marker, only: %i[destroy]
 
