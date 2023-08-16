@@ -39,6 +39,9 @@ gem "redis", "~> 4.0"
 # Adds friendly slugs to the url
 gem 'friendly_id', '~> 5.4.0'
 
+# User authentication
+gem "devise"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
