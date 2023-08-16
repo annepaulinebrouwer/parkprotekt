@@ -1,7 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "Cleaning the database"
+Animal.destroy_all
+Marker.destroy_all
+
+puts 'Create Black Bear'
+black_bear = Animal.create(name: 'Black Bear')
+
+puts 'Create markers for Black Bear'
+black_bear.markers.create!(
+  latitude: '37.865101',
+  longitude: '-119.538330',
+  category: 'accident',
+  title: 'Car coalition',
+  description: 'Car coalition with black bear on Southside Drive'
+)
+
+black_bear.markers.create!(
+  latitude: '37.8308',
+  longitude: '-119.4583',
+  category: 'fire',
+  title: 'Smoke detaction',
+  description: 'Smoke detected around Tenaya Lake'
+)
+puts 'Finished'
