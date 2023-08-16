@@ -2,5 +2,5 @@ class Animal < ApplicationRecord
   extend FriendlyId
   friendly_id :name, use: :slugged
 
-  has_many :markers
+  has_many :markers, dependent: :destroy
 end

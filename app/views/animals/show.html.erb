@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h1 class="mt-5"><%=@animal.name%></h1>
+        <% @animal.markers.each do |marker| %>
+
+        <div class="card-product">
+          <div class="card-product-infos">
+            <h2><%=marker.title%></h2>
+            <p><%=marker.description%></p>
+            <p>Category: <%=marker.category%></p>
+          <p>
+            (<%=marker.latitude%>
+            <%=marker.longitude%>)
+          </p>
+          <div>
+            <%= link_to "Delete", marker_path(marker), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+          </div>
+          </div>
+        </div>
+        <p></p>
+        <% end %>
+    </div>
+    <div>
+      <%= link_to "Add new marker", new_animal_marker_path(@animal), class: "btn btn-flat" %>
+    </div>
+  </div>
+</div>
