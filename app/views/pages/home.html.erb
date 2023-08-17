@@ -1,7 +1,15 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_url 'deer.jpeg' %>);">
+<div
+  class="bg-image"
+  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(<%= asset_url 'deer.jpeg' %>);">
   <div class="container">
-    <h1>A comprehensive tool to <strong>safeguard</strong> park <strong>wildlife</strong></h1>
-    <%= link_to "View Black Bear", animal_path(Animal.find_by(slug: 'black-bear')), class: "btn btn-flat" %>
-    <%= link_to "View Red Fox", animal_path(Animal.find_by(slug: 'red-fox')), class: "btn btn-flat" %>
+    <div class="row">
+      <div class="col-6">
+        <h1>A comprehensive tool to <strong>safeguard</strong> park <strong>wildlife</strong></h1>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-3">
+        <div>alerts go here</div>
+      </div>
+    </div>
   </div>
 </div>
