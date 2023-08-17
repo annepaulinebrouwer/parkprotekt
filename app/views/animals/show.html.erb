@@ -51,7 +51,7 @@
       <div class="w-100 bg-danger">graphic</div>
     </div>
     <div class="col-3">
-      <div>alerts go here</div>
+      <%= render "shared/alerts" %>
       <% @animal.markers.each do |marker| %>
 
         <div class="card-product">

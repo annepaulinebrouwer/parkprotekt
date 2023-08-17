@@ -1,0 +1,21 @@
+.alerts-container {
+  // border: 1px solid $red;
+
+  .icon {
+    height: 28px;
+    width: 28px;
+    background-color: $red;
+  }
+}
+
+.custom-alert {
+  background-color: $gray;
+  border-radius: 0.5rem;
+  padding: 1em;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.custom-alert:hover {
+  background-color: $light;
+}
