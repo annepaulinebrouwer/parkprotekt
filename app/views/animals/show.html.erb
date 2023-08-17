@@ -1,8 +1,43 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-10">
-      <h1 class="mt-5"><%=@animal.name%></h1>
-        <% @animal.markers.each do |marker| %>
+    <div class="col-md-12">
+      <h2 class="mt-5"><%=@animal.name%></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div>
+        animal image
+      </div>
+      <p>
+        Scientific Name:
+        Vulpes vulpes necator
+      </p>
+      <p>
+        Characteristics:
+        Despite its name, Sierra Nevada red foxes can be either mostly red, mostly black or a grayish brown cross phase.
+      </p>
+      <p>
+        Endangered Status:
+        The Sierra Nevada Distinct Population Segment was listed as endangered in 2021. Only about 18 to 39 individuals remain in the wild today.
+      </p>
+      <p>
+        Sightings:
+        Alpine, Fresno, Inyo, Madera, Mono and Tuolumne counties.
+      </p>
+      <p>
+        Threatened By:
+        Wildfire, drought, competition with coyotes, decreases in prey numbers and widespread hybridization with non-native foxes.
+      </p>
+    </div>
+    <div class="col-6">
+      <div class="w-100 bg-danger">map content here</div>
+      <h3>Distribution of <%= @animal.name %> specimens</h3>
+      <div class="w-100 bg-danger">graphic</div>
+    </div>
+    <div class="col-3">
+      <div>alerts go here</div>
+      <% @animal.markers.each do |marker| %>
 
         <div class="card-product">
           <div class="card-product-infos">
@@ -20,10 +55,10 @@
         </div>
         <p></p>
         <% end %>
-    </div>
-    <div>
-      <%= link_to "Add new marker", new_animal_marker_path(@animal), class: "btn btn-flat" %>
-      <%= link_to "View webcam", webcam_animal_path(@animal), class: "btn btn-flat" %>
+        <div>
+          <%= link_to "Add new marker", new_animal_marker_path(@animal), class: "btn btn-flat" %>
+          <%= link_to "View webcam", webcam_animal_path(@animal), class: "btn btn-flat" %>
+        </div>
     </div>
   </div>
 </div>
