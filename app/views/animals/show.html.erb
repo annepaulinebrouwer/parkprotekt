@@ -1,37 +1,52 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2 class="mt-5"><%=@animal.name%></h2>
+      <h2 class="mt-5">
+        <span class="endangered-icon">E</span>
+         <%=@animal.name%>
+      </h2>
     </div>
   </div>
   <div class="row">
     <div class="col-3">
-      <div>
+      <div class="img-animal rounded">
         animal image
       </div>
       <p>
+        <strong>
         Scientific Name:
+        </strong><br>
+        <em>
         Vulpes vulpes necator
+        </em>
       </p>
       <p>
+        <strong>
         Characteristics:
+        </strong><br>
         Despite its name, Sierra Nevada red foxes can be either mostly red, mostly black or a grayish brown cross phase.
       </p>
       <p>
+        <strong>
         Endangered Status:
+        </strong><br>
         The Sierra Nevada Distinct Population Segment was listed as endangered in 2021. Only about 18 to 39 individuals remain in the wild today.
       </p>
       <p>
+        <strong>
         Sightings:
+        </strong><br>
         Alpine, Fresno, Inyo, Madera, Mono and Tuolumne counties.
       </p>
       <p>
+        <strong>
         Threatened By:
+        </strong><br>
         Wildfire, drought, competition with coyotes, decreases in prey numbers and widespread hybridization with non-native foxes.
       </p>
     </div>
     <div class="col-6">
-      <div class="w-100 bg-danger">map content here</div>
+      <div class="w-100 bg-danger rounded">map content here</div>
       <h3>Distribution of <%= @animal.name %> specimens</h3>
       <div class="w-100 bg-danger">graphic</div>
     </div>
