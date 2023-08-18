@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 // import smokeimage from "../../assets/images/icons/Smoke.svg"
+// const imgUrl = Rails.application.config.assets.url + 'Smoke.svg'
 
 // Connects to data-controller="insert-alert"
 export default class extends Controller {
@@ -7,7 +8,7 @@ export default class extends Controller {
 
   connect() {
     console.log("hello from stimulus")
-    const alert = `<div class="custom-alert">Smoke detected</div>`
+    const alert = `<div class="custom-alert"><img src="/Smoke.svg" class="alert-icon"/>Smoke detected</div>`
     setTimeout(() => {
       this.addAlert(alert)
     }, 5000);
