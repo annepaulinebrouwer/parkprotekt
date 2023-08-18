@@ -1,12 +1,17 @@
 <div class="card alerts-container bg-white border rounded-2 border-2 border-danger">
-  <div class="card-body">
+  <div class="card-body"
+    data-controller="insert-alert"
+    data-insert-alert-target="container">
+
     <div class="alerts-header d-flex flex-row card-title">
       <%= image_tag "icons/Alert.svg" %>
       <h3 class="mb-0 ms-2">Alerts</h3>
     </div>
+
     <div class="custom-alert">
       <%= image_tag "icons/Smoke.svg", class: "alert-icon" %>
       Smoke detected
     </div>
+
   </div>
 </div>
