@@ -13,20 +13,31 @@
       <ul class="navbar-nav nav-spaced">
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="10,20">
-
-          <%#= link_to "Mammals", "#", class: "nav-link" %>
             Mammals
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Red Fox", animal_path(Animal.find_by(slug: 'red-fox')), class: "dropdown-item" %>
+              <%= link_to "Big Horn Sheep", "#", class: "dropdown-item" %>
               <%= link_to "Black Bear", animal_path(Animal.find_by(slug: 'black-bear')), class: "dropdown-item" %>
+              <%= link_to "Bobcat", "#", class: "dropdown-item" %>
+              <%= link_to "Brown Bat", "#", class: "dropdown-item" %>
+              <%= link_to "Coyote", "#", class: "dropdown-item" %>
+              <%= link_to "Mountain Lion", "#", class: "dropdown-item" %>
+              <%= link_to "Mule Deer", "#", class: "dropdown-item" %>
+              <%= link_to "Pacific Fisher", "#", class: "dropdown-item" %>
+              <%= link_to "Red Fox", animal_path(Animal.find_by(slug: 'red-fox')), class: "dropdown-item" %>
             </div>
         </li>
         <li class="nav-item">
           <%= link_to "Maps", "#", class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Sightings", "#", class: "nav-link" %>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="sightingsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="10,20">
+            Sightings
+          </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sightingsDropdown">
+              <%= link_to "Webcam", "#", class: "dropdown-item" %>
+              <%= link_to "Photo Gallery", "#", class: "dropdown-item" %>
+            </div>
         </li>
         <% if user_signed_in? %>
         <li class="nav-item dropdown">
