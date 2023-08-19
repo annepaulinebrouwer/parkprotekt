@@ -9,7 +9,7 @@
 }
 
 .custom-alert {
-  background-color: $gray;
+  background-color: $light;
   border-radius: 0.5rem;
   padding: 1em;
   width: 100%;
@@ -18,10 +18,11 @@
 }
 
 .custom-alert:hover {
-  background-color: $light;
+  background-color: $gray;
   cursor: pointer;
 }
 
 .alert-icon {
   max-height: 28px;
+  max-width: 28px;
 }
