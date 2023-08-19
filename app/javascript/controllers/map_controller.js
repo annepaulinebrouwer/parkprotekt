@@ -16,5 +16,14 @@ export default class extends Controller {
       center: [-119.5, 37.8],
       zoom: 10
     })
+    this.#addMarkersToMap()
+  }
+
+  #addMarkersToMap() {
+    this.markersValue.forEach((marker) => {
+      new mapboxgl.Marker()
+        .setLngLat([ marker.longitude, marker.latitude ])
+        .addTo(this.map)
+    })
   }
 }
