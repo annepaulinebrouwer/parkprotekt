@@ -13,15 +13,15 @@ black_bear.markers.create!(
   latitude: '37.865101',
   longitude: '-119.538330',
   category: 'accident',
-  title: 'Car coalition',
-  description: 'Car coalition with black bear on Southside Drive'
+  title: 'Car collision',
+  description: 'Car collision with black bear on Southside Drive'
 )
 
 black_bear.markers.create!(
   latitude: '37.8308',
   longitude: '-119.4583',
   category: 'fire',
-  title: 'Smoke detaction',
+  title: 'Smoke detected',
   description: 'Smoke detected around Tenaya Lake'
 )
 
@@ -36,15 +36,15 @@ red_fox.markers.create!(
   latitude: '37.865601',
   longitude: '-120.538330',
   category: 'accident',
-  title: 'Car coalition',
-  description: 'Car coalition with Red Fox on northeast Drive'
+  title: 'Car collision',
+  description: 'Car collision with Red Fox on northeast Drive'
 )
 
 red_fox.markers.create!(
   latitude: '37.8308',
   longitude: '-119.4583',
   category: 'drought',
-  title: 'Smoke detaction',
+  title: 'Smoke detected',
   description: 'Drought detected in territory of Red Fox'
 )
 
