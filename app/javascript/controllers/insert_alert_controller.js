@@ -11,7 +11,7 @@ export default class extends Controller {
     const alert = `<div class="custom-alert"><img src="/Smoke.svg" class="alert-icon"/>Smoke detected</div>`
     setTimeout(() => {
       this.addAlert(alert)
-    }, 5000);
+    }, 10000);
   }
 
   addAlert(alertHTML) {
