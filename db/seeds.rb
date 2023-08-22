@@ -33,19 +33,27 @@ red_fox = Animal.create(
 
 puts 'Create markers for Red Fox'
 red_fox.markers.create!(
-  latitude: '37.8656',
-  longitude: '-119.5722',
+  latitude: '37.850282',
+  longitude: '-119.572043',
   category: 'accident',
   title: 'Car collision',
-  description: 'Car collision with Red Fox on northeast Drive'
+  description: 'Car collision with Red Fox on Tioga Road'
 )
 
 red_fox.markers.create!(
-  latitude: '37.8308',
-  longitude: '-119.4583',
-  category: 'drought',
+  latitude: '37.826214',
+  longitude: '-119.4700',
+  category: 'fire',
   title: 'Smoke detected',
-  description: 'Drought detected in territory of Red Fox'
+  description: 'Wildfire detected in territory of Red Fox in Tenaya Lake'
+)
+
+red_fox.markers.create!(
+  latitude: '37.862141',
+  longitude: '-119.4998',
+  category: 'GPS Tracker',
+  title: 'Current location RF35',
+  description: 'GPS Tracker of Red Fox 35'
 )
 
 puts 'Finished'
