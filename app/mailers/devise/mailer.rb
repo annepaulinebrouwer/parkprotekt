@@ -1,4 +1,4 @@
-class Devise::Mailer < Devise.parent_mailer.constantize
+class Devise::Mailer < ApplicationMailer
   include Devise::Mailers::Helpers
 
   def confirmation_instructions(record, token, opts={})
