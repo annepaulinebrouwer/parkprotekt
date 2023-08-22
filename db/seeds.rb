@@ -33,8 +33,8 @@ red_fox = Animal.create(
 
 puts 'Create markers for Red Fox'
 red_fox.markers.create!(
-  latitude: '37.865601',
-  longitude: '-120.538330',
+  latitude: '37.8656',
+  longitude: '-119.5722',
   category: 'accident',
   title: 'Car collision',
   description: 'Car collision with Red Fox on northeast Drive'

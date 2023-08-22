@@ -6,7 +6,6 @@
         <h3>Create a new marker for <%= @animal.name %> </h3>
 
         <%= simple_form_for [@animal, @marker] do |f| %>
-          <%= f.association :animal, collection: Animal.all.order(:name), prompt: "Select an animal" %>
           <%= f.input :latitude, as: :float, required: true %>
           <%= f.input :longitude, as: :float, required: true %>
           <%= f.input :category, required: true, collection: Marker.categories, prompt: "Select type of marker" %>
