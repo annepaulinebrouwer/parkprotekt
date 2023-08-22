@@ -6,7 +6,7 @@ class Marker < ApplicationRecord
   # enum category: { accident: 0, wildfire: 1, disease: 2, drought: 3 }
 
   def self.categories
-    ["Accident", "Wildfire", "Disease", "Drought"]
+    ["Accident", "Wildfire", "Disease", "Drought", "GPS Tracker"]
   end
 
 end
