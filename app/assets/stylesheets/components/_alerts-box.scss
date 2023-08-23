@@ -6,9 +6,13 @@
     width: 28px;
     background-color: $red;
   }
+
+  a {text-decoration: none;}
 }
 
 .custom-alert {
+  text-decoration: none!important;
+  color: $black;
   background-color: $light;
   border-radius: 0.5rem;
   padding: 1em;

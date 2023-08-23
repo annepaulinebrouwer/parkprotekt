@@ -8,7 +8,7 @@ export default class extends Controller {
 
   connect() {
     console.log("hello from stimulus")
-    const alert = `<div class="custom-alert"><img src="/Smoke.svg" class="alert-icon"/>Smoke detected</div>`
+    const alert = `<a href="/animals/red-fox/" class="text-decoration-none"><div class="custom-alert"><img src="/Smoke.svg" class="alert-icon"/>Smoke detected</div></a>`
     setTimeout(() => {
       this.addAlert(alert)
     }, 10000);

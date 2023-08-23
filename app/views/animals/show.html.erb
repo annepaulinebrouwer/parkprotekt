@@ -50,15 +50,14 @@
         data-map-markers-value="<%= @markers.to_json %>"
         data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
       <h3 class="mt-4">Distribution of <%= @animal.name %> specimens</h3>
-      <div class="w-100 bg-danger rounded">
-        <%= image_tag "Chart-of-red-fox.png", class: "w-100 rounded" %>
+      <div class="w-100 chart rounded">
       </div>
     </div>
     <div class="col-3">
       <%= render "shared/alerts" %>
         <div>
-          <%= link_to "Add new marker", new_animal_marker_path(@animal), class: "btn btn-flat mb-2" %>
-          <%= link_to "View webcam", webcam_animal_path(@animal), class: "btn btn-flat" %>
+          <%= link_to "Add new marker", new_animal_marker_path(@animal), class: "btn btn-flat my-4" %>
+          <%#= link_to "View webcam", webcam_animal_path(@animal), class: "btn btn-flat" %>
         </div>
     </div>
   </div>
