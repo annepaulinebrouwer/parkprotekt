@@ -50,8 +50,7 @@
         data-map-markers-value="<%= @markers.to_json %>"
         data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
       <h3 class="mt-4">Distribution of <%= @animal.name %> specimens</h3>
-      <div class="w-100 bg-danger rounded">
-        <%= image_tag "Chart-of-red-fox.png", class: "w-100 rounded" %>
+      <div class="w-100 chart rounded">
       </div>
     </div>
     <div class="col-3">

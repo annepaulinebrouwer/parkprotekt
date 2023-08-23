@@ -32,3 +32,10 @@
 .btn-flat:hover {
   background: $apple;
 }
+
+.chart {
+  background-image: url("Chart-of-red-fox.png");
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+}
