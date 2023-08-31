@@ -1,4 +1,4 @@
-<pre>
+
   # Park Protek't
   https://parkprotekt-be989bf4a2bf.herokuapp.com
 
@@ -43,4 +43,3 @@
   Users play an essential role by reporting potential fire hazards and species sightings.
   This collaborative approach transforms every user into an environmental guardian,
   actively contributing to the app's database.
-</pre>
